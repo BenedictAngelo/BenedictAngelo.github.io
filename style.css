@@ -116,13 +116,22 @@ nav .links a.active{
     transition: all 0.3s ease;
 }
 
-.about .left .info .buttons button.hire{
+.about .left .info .buttons .hire{
+    font-size: 16px;
+    padding: 6px 10px;
+    border-radius: 7px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
     color: #fff;
     background: #388E3C;
     border: 1px solid #171717;
 }
 
-.about .left .info .buttons button.hire:hover{
+.about .left .info .buttons .hire:hover{
     background: #4CAF50;
 }
 
@@ -414,4 +423,25 @@ footer .socials a{
         font-size: 13px;
     }
 
+}
+
+#emailNotification {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background: #388E3C;
+    color: #fff;
+    padding: 12px 18px;
+    border-radius: 10px;
+    font-size: 14px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    transform: translateY(10px);
+    z-index: 9999;
+}
+
+#emailNotification.show {
+    opacity: 1;
+    transform: translateY(0);
 }
