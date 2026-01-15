@@ -240,7 +240,7 @@ footer a.online i{
     flex: 1;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 40% auto;
+    grid-template-rows: auto;
     gap: 20px;
 }
 
