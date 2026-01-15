@@ -1,23 +1,120 @@
 <!DOCTYPE html>
-<html lang='en'>
-  <head>
+<html lang="en">
+
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
     <link rel="stylesheet" href="style.css">
-    <title>Personal Website Portfolio</title>
-  </head>
-  <body>
-    <nav>
-      <div class="logo">
-        <i class="fa-solid fa-code"></i>
-      </div>
-      <div class="links">
-        <a href="#" class="active">About</a>
-        <a href="#">Portfolio</a>
-        <a href="#">Contact me</a>
-      </div>
-    </nav>
-  </body>
-</html>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>Portfolio Website</title>
+</head>
 
+<body>
+    <nav>
+        <div class="logo">
+            <i class="fas fa-code"></i>
+        </div>
+        <div class="links">
+            <a href="#" class="active">About</a>
+            <a href="#">Portfolio</a>
+            <a href="#contact">Contact Me</a>
+        </div>
+    </nav>
+    <div class="about">
+        <div class="left">
+            <h3>Electronics Engineer</h3>
+            <div class="info">
+                <h2>I'm Benedict Angelo</h2>
+                <p>
+                    An Electronics Engineer with a strong focus on networking, IT systems, cybersecurity,
+                    and software development. I work at the intersection of hardware, networks, and code.
+                </p>
+                <div class="buttons">
+                    <button class="hire">
+                        Hire me <i class="fas fa-plus"></i>
+                    </button>
+                    <button class="email">
+                        Copy Email <i class="far fa-copy"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <a class="online" href="#"><i class="fas fa-circle"></i> Available For Job</a>
+            <img src="assets/profile.png">
+        </div>
+    </div>
+
+    <div class="works">
+        <div class="left">
+            <h3><i class="fas fa-circle"></i> Experiences</h3>
+            <div class="works-list">
+                <div class="item">
+                    <div class="work-info">
+                        <h5 class="active">Network Operation Center Analyst Intern</h5>
+                        <p>July 2024 - Sept 2024</p>
+                    </div>
+                    <p>Radius Telecoms, Inc.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="right">
+            <div class="item">
+                <a href="#">About My Work</a>
+                <p>
+                    I focus on building, monitoring, and supporting reliable IT and network systems.
+                    My work involves troubleshooting network issues, analyzing system behavior,
+                    automating tasks with scripts, and continuously learning modern technologies
+                    in cybersecurity, cloud, and software development.
+                </p>
+
+            </div>
+            <div class="item">
+                <a href="#">Networking & Infrastructure</a>
+                <p>
+                    Hands-on experience with network monitoring, ticketing systems, and troubleshooting
+                    using tools like SolarWinds, PuTTY, and basic routing and switching concepts.
+                </p>
+            </div>
+            <div class="item">
+                <a href="#">Cybersecurity & Automation</a>
+                <p>
+                    Experience working with security tools, virtual labs, and automation scripts
+                    using Python and Bash to analyze logs, detect anomalies, and improve system security.
+                </p>
+            </div>
+            <div class="item">
+                <a href="#">Software & Scripting</a>
+                <p>
+                    Developing small-scale applications and scripts using Python, SQL, and Git,
+                    with a focus on clean logic, automation, and problem-solving.
+                </p>
+            </div>
+            <div class="item">
+                <a href="#">Collaboration & Growth</a>
+                <p>
+                    Comfortable working in team environments, supporting users, coordinating with engineers,
+                    and continuously improving technical and communication skills through hands-on projects
+                    and certifications.
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+    <footer id="contact">
+        <a href="#">Contact me</a>
+        <div class="socials">
+            <a href="https://github.com/BenedictAngelo" target="_blank" rel="noopener noreferrer">Github</a>
+            <a href="https://www.facebook.com/profile.php?id=61583860295569" target="_blank" rel="noopener noreferrer">Facebook</a>
+            <a href="https://www.linkedin.com/in/benedictangelo/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a href="#" id="copyEmail">Email</a>
+        </div>
+        <a class="online" href="#"><i class="fas fa-circle"></i> Available For Job</a>
+    </footer>
+  <div id="emailNotification">Email copied to clipboard</div>
+  <script src="script.js"></script>
+</body>
+
+</html>
