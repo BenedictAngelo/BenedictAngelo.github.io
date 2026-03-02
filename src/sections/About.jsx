@@ -56,7 +56,7 @@ export const About = () =>{
               <p>
                 I’m an Electronics Engineering graduate with a strong foundation in networking,
                 telecommunications, and embedded systems, driven by a curiosity for how systems work from hardware to software.
-                My background includes network operation center, network monitoring, and technical support, shaping a practical, 
+                My background includes network operation center, and technical support, shaping a practical, 
                 systems-oriented approach to problem solving.
               </p>
 
