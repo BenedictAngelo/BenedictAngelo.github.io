@@ -73,8 +73,12 @@ export const Hero = () =>{
 
             {/* Headline */}
             <div className="space-y-4">
-              <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight animate-fade-in animation-delay-100">
-                Crafting  <span className="text-primary glow-text">Embedded & Network</span>
+              <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight animate-fade-in animation-delay-100">
+                <span className="underline">
+                  <span className="text-primary glow-text">Hello! </span>I am Benedict Angelo
+                </span>
+                <br/>
+                Crafting  <span className="text-primary glow-text">Network & Embedded</span>
                 <br />
                 systems with
                 <br />
@@ -85,7 +89,7 @@ export const Hero = () =>{
               <p 
                 className="text-lg text-muted-foreground max-w-lg animate-fade-in animation-delay-200"
               >
-                Hello, I'm Benedict Angelo - an Electronics Engineer focused on
+                An Electronics Engineer focused on
                 <span className="font-bold"> Network, Cybersecurity, Embedded systems </span>
                 , building fast and secure software with 
                 <span className="font-bold"> Rust, C, and Python</span>, 
