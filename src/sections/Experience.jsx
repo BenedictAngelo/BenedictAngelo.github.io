@@ -10,7 +10,7 @@ const experiences = [
   },
   {
     period: "2024 — 2024",
-    role: "Network Operations Center Intern",
+    role: "Network Operations Center Analyst Intern",
     company: "Radius Telecom, Inc. - PH",
     description:
       "Intern analyst in-charge of network monitoring, topology creation, database management, and customer service",
