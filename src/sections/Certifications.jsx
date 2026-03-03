@@ -1,50 +1,30 @@
-import { ArrowUpRight,Github } from "lucide-react";
-import {AnimatedBorderButton} from "../components/AnimatedBorderButton.jsx"
+
+import { ArrowUpRight } from "lucide-react";
 
 
-const projects = [
+const certifications = [
   {
-    title: "Personal React Website",
+    title: "Google Cybersecurity Certificate - Oct 14, 2025",
     description: 
-      "A reactive personal website, rich beautiful looking animations and aesthetic looking UI",
-    image: "/projects/project1.png",
-    tags: ["React","JSX","Tailwind CSS","Vite"],
-    link: "https://benedictangelo.github.io/",
-    github: "https://github.com/BenedictAngelo/BenedictAngelo.github.io",
+      "A fundamental level certificate provided by Google via Coursera, teaching foundational cybersecurity practices",
+    image: "/certificates/google-cert.png",
+    tags: ["Cybersecurity","SIEM","Python","Linux","SQL"],
+    link: "https://coursera.org/verify/professional-cert/RSH0GAIXL5L5",
   },
   {
-    title: "Static Website [DEPRECATED]",
+    title: "IBM Ethical Hacking with open Source Tools - Oct 22, 2025",
     description: 
-      "A simple static website for fundamental learning of HTML, CSS, and JavaScript",
-    image: "/projects/project2.png",
-    tags: ["JavaScript","HTML","CSS"],
-    link: "#",
-    github: "https://github.com/BenedictAngelo/static-website",
-  },
-  {
-    title: "Password Generator",
-    description: 
-      "A simple Python script, capable of generating password with desired number of characters, email, then list on a separate file",
-    image: "/projects/project3.png",
-    tags: ["Python","Bash","Cybersecurity"],
-    link: "#",
-    github: "https://github.com/BenedictAngelo/Simple-Password-Generator",
-  },
-  {
-    title: "Login Analyzer",
-    description: 
-      "A simple Python script, simulating parsing of a SQL database for suspicious logins",
-    image: "/projects/project4.png",
-    tags: ["Python","Bash","SQLite","Cybersecurity"],
-    link: "#",
-    github: "https://github.com/BenedictAngelo/Login-Analyzer",
+      "A fundamental level certificate provided by IBM via Coursera, teaching foundational ethical hacking practices",
+    image: "/certificates/ibm-cert.png",
+    tags: ["Pen Testing","Kali Linux","WireShark","Metasploit","OpenVAS"],
+    link: "https://coursera.org/verify/professional-cert/4TKT8T1GCFMN",
   },
 ];
 
 
-export const Projects = () =>{
+export const Certifications = () =>{
   return (
-    <section id="projects" className="py-32 relative overflow-hidden">
+    <section id="certifications" className="py-32 relative overflow-hidden">
       {/* Bg glows */}
       <div className="absolute top-1/4 right-0 w-96 h-96 bg-primary/5 rounded-full blur-3xl" />
       <div className="absolute bottom-1/4 left-0 w-64 h-64 bg-highlight/5 rounded-full blur-3xl" />
@@ -53,22 +33,19 @@ export const Projects = () =>{
         <div className="text-center mx-auto max-w-3xl mb-16">
           <span className="text-secondary-foreground text-sm font-medium tracking-wider uppercase animate-fade-in">
             <h2 className="text-4xl md:text-5xl font-bold mt-4 mb-6 animate-fade-in animation-delay-100 text-secondary-foreground">
-              Projects that is mix of
+              Certifications
+              <br/>
               <span className="font-serif italic font-normal text-white">
                 {" "} 
-                security and creativity.
+                for credibility.
               </span>
             </h2>
-            <p className="text-muted-foreground animate-fade-in animation-delay-200">
-              A selection of my recent work, from web applications to
-              scripts and automation to solve real-world problems.
-            </p>
           </span>
         </div>
 
         {/* Projects grid */}
         <div className="grid md:grid-cols-2 gap-8">
-          {projects.map((project, idx) => (
+          {certifications.map((certifications, idx) => (
             <div 
               key={idx} 
               className="group glass rounded-2xl overflow-hidden animate-fade-in md:row-span-1"
@@ -77,8 +54,8 @@ export const Projects = () =>{
               {/* Image */}
               <div className="relative overflow-hidden aspect-video">
                 <img 
-                  src={project.image} 
-                  alt={project.title}
+                  src={certifications.image} 
+                  alt={certifications.title}
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                 />
                 <div 
@@ -89,16 +66,10 @@ export const Projects = () =>{
                 {/* Overlay Links */}
                 <div className="absolute inset-0 flex items-center justify-center gap-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <a 
-                    href={project.link} 
+                    href={certifications.link} 
                     className="p-3 rounded-full glass hover:bg-primary hover:text-primary-foreground transition-all"
                   >
                     <ArrowUpRight className="w-5 h-5"/>
-                  </a>
-                  <a 
-                    href={project.github} 
-                    className="p-3 rounded-full glass hover:bg-primary hover:text-primary-foreground transition-all"
-                  >
-                    <Github className="w-5 h-5"/>
                   </a>
                 </div>
               </div>
@@ -107,7 +78,7 @@ export const Projects = () =>{
               <div className="p-6 space-y-4">
                 <div className="flex items-start justify-between">
                   <h3 className="text-xl font-semibold group-hover:text-primary transition-colors">
-                    {project.title}
+                    {certifications.title}
                   </h3>
                   <ArrowUpRight 
                     className="w-5 h-5
@@ -117,10 +88,10 @@ export const Projects = () =>{
                   />
                 </div>
                 <p className="text-muted-foreground text-sm">
-                  {project.description}
+                  {certifications.description}
                 </p>
                 <div className="flex flex-wrap gap-2">
-                  {project.tags.map((tag,tagIdx) => (
+                  {certifications.tags.map((tag,tagIdx) => (
                   <span 
                       key={tagIdx}
                       className="px-4 py-1.5 rounded-full bg-surface text-xs font-medium 
@@ -136,15 +107,6 @@ export const Projects = () =>{
           ))}
         </div>
 
-        {/* View All CTA */}
-        <a href="https://github.com/BenedictAngelo?tab=repositories">
-          <div className="text-center mt-12 animate-fade-in animation-delay-500">
-            <AnimatedBorderButton>
-              View All Projects
-              <ArrowUpRight className="w-5 h-5"/>
-            </AnimatedBorderButton>
-          </div>
-        </a>
       </div>
     </section>
   );
